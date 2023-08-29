@@ -6,7 +6,7 @@
 #    By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/23 10:04:06 by cmartino          #+#    #+#              #
-#    Updated: 2023/08/24 11:42:47 by cmartino         ###   ########.fr        #
+#    Updated: 2023/08/24 13:27:29 by cmartino         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,4 +41,3 @@ fclean:	clean
 re:	fclean all
 
 .PHONY:	all clean fclean re
-
