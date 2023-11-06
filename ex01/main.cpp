@@ -46,7 +46,6 @@ int	main(void)
 		group[i].announce();
 		++i;
 	}
-	delete [] horde;
-	std::cout << std::endl;
+	delete [] group;
 	return (0);
 }
