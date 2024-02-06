@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:06:18 by cmartino          #+#    #+#             */
-/*   Updated: 2023/08/23 13:51:02 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/01/19 14:05:10 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,7 @@ int	main(void)
 	delete [] horde;
 	std::cout << std::endl;
 	noZombie = zombieHorde(0, "Charles");
-	i = 0;
-	while(i < 0)
-	{
-		horde[i].announce();
-		++i;
-	}
+	delete [] noZombie;
 	std::cout << std::endl;
 	group = zombieHorde(10, "Steph");
 	i = 0;
