@@ -3,11 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmartino <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:17 by cmartino          #+#    #+#             */
-/*   Updated: 2023/08/23 10:09:18 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/08 11:34:37 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Harl.hpp"
 
+int main(int argc, chat **argv)
+{
+	Harl	harl;
+	
+	return (0);
+}
