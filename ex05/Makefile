@@ -6,13 +6,14 @@
 #    By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/23 10:04:20 by cmartino          #+#    #+#              #
-#    Updated: 2024/01/30 12:26:14 by cmartino         ###   ########.fr        #
+#    Updated: 2024/02/08 15:18:28 by cmartino         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= harl
 
-FILES	= main
+FILES	= main \
+			Harl
 
 SRCS	= $(addsuffix .cpp, $(FILES))
 

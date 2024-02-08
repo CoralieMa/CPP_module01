@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:33 by cmartino          #+#    #+#             */
-/*   Updated: 2024/02/08 11:28:56 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/08 15:20:39 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ Harl::Harl(void){
 }
 
 Harl::~Harl(void){
-	std::cout << this->name <<": died" << std::endl;
 	return ;
 }
 
@@ -43,6 +42,8 @@ void	Harl::error(void){
 }
 
 void	Harl::complain(std::string level){
+	std::cout << level << std::endl;
+	this->debug();
 	return;
 }
 

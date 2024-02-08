@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:26 by cmartino          #+#    #+#             */
-/*   Updated: 2024/02/08 11:24:10 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/08 15:09:15 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define HARL_HPP
 
 # include <string>
+# include <iostream>
 
 class Harl
 {
