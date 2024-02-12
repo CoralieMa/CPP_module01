@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:33 by cmartino          #+#    #+#             */
-/*   Updated: 2024/02/08 15:20:39 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/12 10:39:59 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,16 @@ void	Harl::error(void){
 }
 
 void	Harl::complain(std::string level){
-	std::cout << level << std::endl;
-	this->debug();
-	return;
+	int			i = 0;
+	void		(Harl::*fct[])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	std::string	complainsLevel[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+	while (i < 4 && level != complainsLevel[i])
+		++i;
+	if (i == 4)
+		std::cout << "Harl doesn't complain. For once!" << std::endl;
+	else
+		(this->*fct[i])();
+	return ;
 }
 
