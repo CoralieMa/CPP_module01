@@ -6,12 +6,11 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:33 by cmartino          #+#    #+#             */
-/*   Updated: 2024/02/12 10:39:59 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/12 10:54:52 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
-
 
 Harl::Harl(void){
 	return ;
@@ -54,4 +53,3 @@ void	Harl::complain(std::string level){
 		(this->*fct[i])();
 	return ;
 }
-
