@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:04 by cmartino          #+#    #+#             */
-/*   Updated: 2024/02/06 14:38:47 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/13 11:30:53 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int ft(std::string fileName, std::string s1, std::string s2)
 						++i;
 					}
 					ofs << s2;
-					i += s2.length() + 1;
+					i += s1.length();
 					pos = buffer.find(s1, i);
 				}
 				ofs << &buffer[i] << std::endl;
@@ -58,8 +58,13 @@ int ft(std::string fileName, std::string s1, std::string s2)
 }
 
 int	main(int argc, char **argv){
-	std::cout << argv[2];
+	std::string s1;
+	
 	if (argc != 4)
+		std::cout << "Wrong input" << std::endl;
+	
+	s1 = argv[2];
+	if (s1 == "")
 		std::cout << "Wrong input" << std::endl;
 	else
 		return (ft(argv[1], argv[2], argv[3]));
