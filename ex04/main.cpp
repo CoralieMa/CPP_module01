@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 10:09:04 by cmartino          #+#    #+#             */
-/*   Updated: 2024/02/13 11:30:53 by cmartino         ###   ########.fr       */
+/*   Updated: 2024/02/13 13:57:27 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int ft(std::string fileName, std::string s1, std::string s2)
 	}
 	else
 	{
-		std::cout << "File: " << fileName << " does not exist" << std::endl;
+		std::cout << "File: error" << std::endl;
 		return (1);
 	}
 	return (0);
@@ -61,12 +61,15 @@ int	main(int argc, char **argv){
 	std::string s1;
 	
 	if (argc != 4)
+	{
 		std::cout << "Wrong input" << std::endl;
-	
+		return (1);
+	}
 	s1 = argv[2];
 	if (s1 == "")
+	{
 		std::cout << "Wrong input" << std::endl;
-	else
-		return (ft(argv[1], argv[2], argv[3]));
-	return (1);
+		return (1);
+	}
+	return (ft(argv[1], argv[2], argv[3]));
 }
